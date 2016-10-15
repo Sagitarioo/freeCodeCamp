@@ -1,5 +1,4 @@
-![](https://github.com/Sagitarioo/Personal/images/logo01.jpg) ![](https://thomas-ko.github.io/freecodecamp-redesign/assets/img/logo-navbar.png)
-
+![](https://thomas-ko.github.io/freecodecamp-redesign/assets/img/logo-navbar.png)
 #Reverse a String
 ```javascript
 function reverseString(str) {
