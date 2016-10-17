@@ -195,17 +195,16 @@ bouncer([7, "ate", "", false, 9]);
 #Seek and Destroy
 ```javascript
 function destroyer(arr) {
-  var arrt=new Array();
-  var attt=arr.slice(1,arr.length);
-  for(i=0;i<arr[0].length;i++){
-     if(attt.indexOf(arr[0][i])<0){
-        arrt.push(arr[0][i]);
-      }
-   }
-  return arrt;
+  var args = [];
+  for(var i = 1; i < arguments.length; i++){
+    args.push(arguments[i]);
+  }
+  var t = arr.filter(function(item,index,array){
+    return args.indexOf(item) < 0;
+  });
+  return t;
 }
-
-destroyer([[1, 2, 3, 1, 2, 3], 2, 3]);
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 ```
 #Where do I belong
 ```javascript
